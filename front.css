@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+.card-about {
+    position: fixed;
+    top: 50%;
+    rightt: 10%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    
+    padding: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    color: black; /* Set text color to black or your desired color */
+}
+body {
+    background-image: url(bgg1.png);
+    
+   
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding-top: 50px; /* Add space above the navigation bar */
+}
+header{
+    
+    text-align: center;
+    margin-top: -50px;
+}
+
+.content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.blur-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('bgg1.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Adjust the blur intensity */
+    z-index: -1;
+}
+.header1 {
+    background-color: #483d8b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height:30px;
+}
+
+h1 {
+    font-family: Copper black;
+    font-size: 42px;
+   
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-top: 0.6rem;
+    margin-right: 3rem;
+}
+nav li img{
+    margin-top: -4px;
+    background-color: #483d8b;
+    width:50px ;
+    height:50px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    margin-top: 0px;
+    margin-left: -32px; /* Adjust as needed based on the space you want above the content */
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.left {
+   
+    width: 50%; /* Adjust the width as needed */
+    overflow: hidden; /* Hide overflow if content is larger than the container */
+}
+
+.right {
+    flex-grow: 1; /* Allow the right section to grow and take the remaining space */
+}
+
+.hero-image img {
+    width: 50px; /* Make sure the image takes the full width of its container */
+    height: 100px; /* Maintain the aspect ratio */
+    margin-bottom: -20px;
+    margin-top:50px;
+    position: relative;
+    bottom: 0px;
+    background-image: url(pic6.png);
+    background-size: 40px;
+    background-repeat:no-repeat;
+    
+}
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust spacing between rows */
+}
+
+
+
+
+
+.card:nth-child(3) {
+    margin-right: 0; /* Remove margin for the third card in each row */
+}
+
+.card:nth-child(5) {
+    margin-right: 0; /* Remove margin for the fifth card in the second row */
+}
+
+/*footer {
+    background-color: #333;
+    color: white;
+    padding: -1rem; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem; /* Adjust the padding as needed */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align items in the same line */
+    align-items: center; /* Center align items vertically */
+}
+#copy {
+    margin: 0; /* Remove default margin to prevent spacing */
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    margin-right: 10px; /* Adjust the margin between icons */
+
+}
+
+/* Adjust the size of the icons as needed */
+.icons i {
+    width: 20px;
+    height: 20px;
+}
+.card {
+	background-color:  #CDFADB;;
+	color: black;
+	padding: 1rem;
+	border-radius: 3px;
+    margin-top: 50px;
+    margin-left:230px;
+    width:300px;
+    height:120px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+	text-align: center;
+}
+
+.card-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    
+    
+}
+.card-content1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    
+}
+
+.voter-stats {
+	text-align: center;
+    margin-top:-15px;
+}
+
+.voter-stats h3 {
+	margin: 0;
+}
+
+.voter-stats p {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.card4 {
+	background-color: white;
+	color: black;
+	padding: 1rem;
+	border-radius: 3px;
+    margin-top: 50px;
+    margin-left:230px;
+    width:300px;
+    height:120px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.card4:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.dark-theme {
+    background-color: rgb(122, 149, 175); /* Light gray color */
+    color: #333; /* Dark text color, adjust as needed */
+    /* Add other dark mode styles here */
+}
+/* Add this CSS for circular button and image styles */
+#theme-toggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+#theme-icon {
+    width: 30px; /* Adjust the size of the image as needed */
+    height: 30px; /* Adjust the size of the image as needed */
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#theme-toggle.dark-theme #theme-icon {
+    transform: rotate(180deg); /* Rotate the icon for dark mode */
+}
+
+/* Add the following CSS for styling the contact card */
+.card5 {
+    background-color: lightblue;
+    color: black;
+    padding: 1rem;
+    border-radius: 3px;
+    margin-top: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+    text-align: left;
+}
+
+.card5 h3 {
+    margin-bottom: 10px;
+}
